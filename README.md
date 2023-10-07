@@ -2,6 +2,9 @@
 
 Material database & bookmark for Genshin Impact
 
+> **Warning**
+> This software is currently under development.
+
 ## Features
 
 - Material database & bookmark
