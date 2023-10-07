@@ -1,0 +1,24 @@
+root: true
+
+env:
+  browser: true
+  es2021: true
+
+extends:
+  - eslint:recommended
+  - plugin:@typescript-eslint/recommended-type-checked
+  - plugin:vue/vue3-recommended
+  - plugin:promise/recommended
+  - "@nuxtjs/eslint-config-typescript"
+  - "eslint-config-nuxt"
+
+parserOptions:
+  project: .nuxt/tsconfig.json
+  sourceType: module
+  ecmaVersion: latest
+  extraFileExtensions:
+    - .vue
+
+ignorePatterns:
+  - .output/**
+  - "**/generated/**"
