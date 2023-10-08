@@ -20,10 +20,7 @@ jobs:
         with:
           node-version: 20
 
-      - name: Setup Bun
-        run: |
-          curl -fsSL https://bun.sh/install | bash
-          echo "$HOME/.bun/bin" >> $GITHUB_PATH
+      - uses: oven-sh/setup-bun@v1
 
       - run: bun install
         working-directory: nuxt
