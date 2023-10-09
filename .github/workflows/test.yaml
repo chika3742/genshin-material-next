@@ -1,0 +1,35 @@
+name: Lint & Test (Nuxt)
+
+on:
+  push:
+    branches-ignore:
+      - "main"
+
+jobs:
+  test-nuxt:
+    name: Lint & Test (Nuxt)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/cache@v3
+        with:
+          path: ~/.bun/install/cache
+          key: ${{ runner.os }}-bun-${{ hashFiles('nuxt/bun.lockb') }}
+          restore-keys: |
+              ${{ runner.os }}-bun-
+
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 20
+
+      - uses: oven-sh/setup-bun@v1
+
+      - run: bun install
+        working-directory: nuxt
+
+      - run: bun run lint
+        working-directory: nuxt
+
+      - run: bun run test
+        working-directory: nuxt
