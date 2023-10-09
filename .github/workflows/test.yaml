@@ -1,3 +1,5 @@
+name: Lint & Test (Nuxt)
+
 on:
   push:
     branches-ignore:
@@ -5,6 +7,7 @@ on:
 
 jobs:
   test-nuxt:
+    name: Lint & Test (Nuxt)
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
