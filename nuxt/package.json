@@ -6,7 +6,7 @@
     "build": "nuxt build",
     "lint": "eslint --ext .ts,.vue .",
     "test": "vitest",
-    "dev": "nuxt dev",
+    "dev": "nuxt dev --port 3002",
     "dev:host": "nuxt dev --host",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
