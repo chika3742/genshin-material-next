@@ -48,5 +48,25 @@ export default defineNuxtConfig({
 
   modules: [
     "@chika3742/mhy-material-components",
+    "@nuxtjs/i18n",
   ],
+  i18n: {
+    locales: [
+      {
+        code: "ja",
+        iso: "ja-JP",
+        file: "ja.yaml",
+      },
+      {
+        code: "en",
+        iso: "en-US",
+        file: "en.yaml",
+      },
+    ],
+    langDir: "./locales/",
+    defaultLocale: "ja",
+    compilation: {
+      strictMessage: false,
+    },
+  },
 })
