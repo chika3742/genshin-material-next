@@ -28,6 +28,7 @@ export default defineNuxtConfig({
   experimental: {
     payloadExtraction: false,
   },
+  css: ["assets/styles/fonts.sass"],
   build: {
     transpile: ["vuetify"],
   },
@@ -49,6 +50,7 @@ export default defineNuxtConfig({
   modules: [
     "@chika3742/mhy-material-components",
     "@nuxtjs/i18n",
+    "@nuxtjs/google-fonts",
   ],
   i18n: {
     locales: [
@@ -67,6 +69,15 @@ export default defineNuxtConfig({
     defaultLocale: "ja",
     compilation: {
       strictMessage: false,
+    },
+  },
+  googleFonts: {
+    families: {
+      "M PLUS Rounded 1c": [500, 700],
+      "Kaisei Opti": [700],
+      Cairo: [700],
+      "Kiwi Maru": [500],
+      "Material Symbols Outlined": true,
     },
   },
 })
