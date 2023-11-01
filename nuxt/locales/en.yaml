@@ -9,6 +9,7 @@ errors:
 
 pageTitles:
   home: Home
+  releaseNotes: Release Notes
   terms: Terms of Service
   termsSummarized: Terms of Service (Summarized)
   privacy: Privacy Policy
