@@ -72,10 +72,10 @@ export default defineNuxtConfig({
       await generateLocType()
     },
     async "builder:watch"(_, _path) {
-      if (_path.startsWith(path.resolve("schemas/"))) {
+      if (_path.startsWith("schemas/")) {
         await generateSchemas()
       }
-      if (_path.startsWith(path.resolve("locales/"))) {
+      if (_path.startsWith("locales/")) {
         await generateLocType()
       }
     },
