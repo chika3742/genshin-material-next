@@ -1,0 +1,17 @@
+{
+  "name": "原神素材ノート",
+  "short_name": "原神素材",
+  "theme_color": "#ffe98f",
+  "background_color": "#888888",
+  "lang": "ja",
+  "start_url": "/",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "/pwaicon.png",
+      "sizes": "256x256",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+  ]
+}
