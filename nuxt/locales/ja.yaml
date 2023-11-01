@@ -1,4 +1,5 @@
 common:
+  appName: 原神素材ノート
   nonProdWarning: これは開発版です。不具合や今後変更される機能が含まれる可能性があります。
 
 pageTitles:

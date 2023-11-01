@@ -1,4 +1,5 @@
 common:
+  appName: Genshin Impact Material Note
   nonProdWarning: This is a development version. It may contain bugs or features that will be changed in the future.
 
 pageTitles:
