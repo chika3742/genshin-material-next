@@ -1,6 +1,11 @@
 common:
   appName: Genshin Impact Material Note
   nonProdWarning: This is a development version. It may contain bugs or features that will be changed in the future.
+  backToHome: Back to Home
+
+errors:
+  404: The page you are looking for was not found.
+  500: An error occurred on the server.
 
 pageTitles:
   home: Home
