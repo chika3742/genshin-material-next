@@ -1,6 +1,10 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 import yaml from "@rollup/plugin-yaml"
 import dsv from "@rollup/plugin-dsv"
+import {generateSitemap} from "./scripts/generate-sitemap"
+
+const hostname = "https://hsr.matnote.app"
+const sitemapRoutes: string[] = []
 
 export default defineNuxtConfig({
   app: {
@@ -45,6 +49,18 @@ export default defineNuxtConfig({
   },
   nitro: {
     preset: "cloudflare-pages-static",
+    hooks: {
+      "prerender:route"(route) {
+        // add route to list
+        sitemapRoutes.push(route.route)
+      },
+      async close() {
+        // generate sitemap.xml
+        if (sitemapRoutes.length > 0) {
+          await generateSitemap(sitemapRoutes, hostname)
+        }
+      },
+    },
   },
   devtools: {
     enabled: true,
