@@ -5,6 +5,7 @@ import dsv from "@rollup/plugin-dsv"
 import {generateSitemap} from "./scripts/generate-sitemap"
 import {workboxBuild} from "./scripts/workbox-build"
 import {generateSchemas} from "./scripts/generate-schemas"
+import {generateLocType} from "./scripts/generate-loc-type"
 
 const hostname = "https://hsr.matnote.app"
 const sitemapRoutes: string[] = []
@@ -68,10 +69,14 @@ export default defineNuxtConfig({
   hooks: {
     async "build:before"() {
       await generateSchemas()
+      await generateLocType()
     },
     async "builder:watch"(_, _path) {
       if (_path.startsWith(path.resolve("schemas/"))) {
         await generateSchemas()
+      }
+      if (_path.startsWith(path.resolve("locales/"))) {
+        await generateLocType()
       }
     },
     async "nitro:build:public-assets"() {
