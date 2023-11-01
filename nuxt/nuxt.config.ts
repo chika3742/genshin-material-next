@@ -1,4 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+import yaml from "@rollup/plugin-yaml"
+import dsv from "@rollup/plugin-dsv"
+
 export default defineNuxtConfig({
   app: {
     pageTransition: {
@@ -31,6 +34,14 @@ export default defineNuxtConfig({
   css: ["assets/styles/fonts.sass"],
   build: {
     transpile: ["vuetify"],
+  },
+  vite: {
+    plugins: [
+      yaml({
+        exclude: "**/locales/**",
+      }),
+      dsv(),
+    ],
   },
   nitro: {
     preset: "cloudflare-pages-static",
