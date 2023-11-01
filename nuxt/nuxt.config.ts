@@ -1,7 +1,8 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
-import path from "path"
+import {execSync} from "child_process"
 import yaml from "@rollup/plugin-yaml"
 import dsv from "@rollup/plugin-dsv"
+import {DateTime} from "luxon"
 import {generateSitemap} from "./scripts/generate-sitemap"
 import {workboxBuild} from "./scripts/workbox-build"
 import {generateSchemas} from "./scripts/generate-schemas"
@@ -132,5 +133,12 @@ export default defineNuxtConfig({
   },
   piniaPersistedstate: {
     storage: "localStorage",
+  },
+
+  runtimeConfig: {
+    public: {
+      pagesCommitSha: process.env.CF_PAGES_COMMIT_SHA ?? execSync("git rev-parse HEAD").toString().trim(),
+      builtAt: DateTime.now().toISO()!,
+    },
   },
 })
