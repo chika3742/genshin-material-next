@@ -39,6 +39,7 @@
     "nuxt": "^3.7.4",
     "typescript": "^5.2.2",
     "vue": "^3.3.4",
-    "vue-router": "^4.2.5"
+    "vue-router": "^4.2.5",
+    "workbox-build": "^7.0.0"
   }
 }

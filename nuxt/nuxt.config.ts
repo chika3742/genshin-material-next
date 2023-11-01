@@ -2,6 +2,7 @@
 import yaml from "@rollup/plugin-yaml"
 import dsv from "@rollup/plugin-dsv"
 import {generateSitemap} from "./scripts/generate-sitemap"
+import {workboxBuild} from "./scripts/workbox-build"
 
 const hostname = "https://hsr.matnote.app"
 const sitemapRoutes: string[] = []
@@ -60,6 +61,11 @@ export default defineNuxtConfig({
           await generateSitemap(sitemapRoutes, hostname)
         }
       },
+    },
+  },
+  hooks: {
+    async "nitro:build:public-assets"() {
+      await workboxBuild()
     },
   },
   devtools: {
