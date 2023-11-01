@@ -4,3 +4,6 @@ common:
 
 pageTitles:
   home: Home
+  terms: Terms of Service
+  termsSummarized: Terms of Service (Summarized)
+  privacy: Privacy Policy
