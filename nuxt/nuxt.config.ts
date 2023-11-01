@@ -1,8 +1,10 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+import path from "path"
 import yaml from "@rollup/plugin-yaml"
 import dsv from "@rollup/plugin-dsv"
 import {generateSitemap} from "./scripts/generate-sitemap"
 import {workboxBuild} from "./scripts/workbox-build"
+import {generateSchemas} from "./scripts/generate-schemas"
 
 const hostname = "https://hsr.matnote.app"
 const sitemapRoutes: string[] = []
@@ -64,6 +66,14 @@ export default defineNuxtConfig({
     },
   },
   hooks: {
+    async "build:before"() {
+      await generateSchemas()
+    },
+    async "builder:watch"(_, _path) {
+      if (_path.startsWith(path.resolve("schemas/"))) {
+        await generateSchemas()
+      }
+    },
     async "nitro:build:public-assets"() {
       await workboxBuild()
     },

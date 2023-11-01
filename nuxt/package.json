@@ -36,6 +36,7 @@
     "@pinia/nuxt": "^0.5.1",
     "@rollup/plugin-dsv": "^3.0.4",
     "@rollup/plugin-yaml": "^4.1.2",
+    "json-schema-to-typescript": "^13.1.1",
     "nuxt": "^3.7.4",
     "typescript": "^5.2.2",
     "vue": "^3.3.4",
