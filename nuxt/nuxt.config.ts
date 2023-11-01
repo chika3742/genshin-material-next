@@ -124,7 +124,7 @@ export default defineNuxtConfig({
   },
   googleFonts: {
     families: {
-      "M PLUS Rounded 1c": [500, 700],
+      "IBM Plex Sans JP": [500, 700],
       "Kaisei Opti": [700],
       Cairo: [700],
       "Kiwi Maru": [500],
