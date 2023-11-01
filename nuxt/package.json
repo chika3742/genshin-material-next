@@ -32,6 +32,8 @@
     "@chika3742/mhy-material-components": "^0.0.7",
     "@nuxtjs/google-fonts": "^3.0.2",
     "@nuxtjs/i18n": "^8.0.0-rc.5",
+    "@pinia-plugin-persistedstate/nuxt": "^1.2.0",
+    "@pinia/nuxt": "^0.5.1",
     "nuxt": "^3.7.4",
     "typescript": "^5.2.2",
     "vue": "^3.3.4",

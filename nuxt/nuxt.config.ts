@@ -51,6 +51,8 @@ export default defineNuxtConfig({
     "@chika3742/mhy-material-components",
     "@nuxtjs/i18n",
     "@nuxtjs/google-fonts",
+    "@pinia/nuxt",
+    "@pinia-plugin-persistedstate/nuxt",
   ],
   i18n: {
     locales: [
@@ -79,5 +81,8 @@ export default defineNuxtConfig({
       "Kiwi Maru": [500],
       "Material Symbols Outlined": true,
     },
+  },
+  piniaPersistedstate: {
+    storage: "localStorage",
   },
 })
