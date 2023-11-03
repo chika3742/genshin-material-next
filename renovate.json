@@ -8,5 +8,39 @@
   "timezone": "Asia/Tokyo",
   "ignoreDeps": [
     "@chika3742/mhy-material-components"
+  ],
+  "branchPrefix": "deps-pages-nodeploy/",
+  "packageRules": [
+    {
+      "matchFileNames": [
+        "nuxt/package.json"
+      ],
+      "matchDepTypes": [
+        "dependencies"
+      ],
+      "branchPrefix": "deps/",
+      "labels": [
+        "deps:nuxt"
+      ]
+    },
+    {
+      "matchFileNames": [
+        "nuxt/package.json"
+      ],
+      "matchDepTypes": [
+        "devDependencies"
+      ],
+      "labels": [
+        "deps:nuxt"
+      ]
+    },
+    {
+      "matchFileNames": [
+        ".github/workflows/test.yaml"
+      ],
+      "labels": [
+        "deps:workflow"
+      ]
+    }
   ]
 }
