@@ -27,6 +27,8 @@ jobs:
 
       - run: bun install
         working-directory: nuxt
+        env:
+          GH_PACKAGES_TOKEN: ${{ secrets.GH_PACKAGES_TOKEN }}
 
       - run: bun run lint
         working-directory: nuxt

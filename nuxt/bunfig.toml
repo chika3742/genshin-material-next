@@ -1,2 +1,2 @@
 [install.scopes]
-"@chika3742" = { token = "$GITHUB_TOKEN", url = "https://npm.pkg.github.com" }
+"@chika3742" = { token = "$GH_PACKAGES_TOKEN", url = "https://npm.pkg.github.com" }
