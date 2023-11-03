@@ -6,5 +6,7 @@
   "branchConcurrentLimit": 0,
   "dependencyDashboard": false,
   "timezone": "Asia/Tokyo",
-  "schedule": ["every weekend"]
+  "ignoreDeps": [
+    "@chika3742/mhy-material-components"
+  ]
 }
