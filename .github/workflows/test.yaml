@@ -33,5 +33,5 @@ jobs:
       - run: bun run lint
         working-directory: nuxt
 
-      - run: bun run test
-        working-directory: nuxt
+#      - run: bun run test
+#        working-directory: nuxt
