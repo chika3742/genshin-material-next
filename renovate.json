@@ -9,6 +9,10 @@
   "ignoreDeps": [
     "@chika3742/mhy-material-components"
   ],
+  "encrypted": {
+    "npmToken": "wcFMA/xDdHCJBTolAQ/+JtrTKfOZHL8Lpsazx0lDq2AhLPWLUw2G7nAv6jE/AaZzai8ZK92Z1cHOSTYLRGfQzP9xULJ1am2gbl4JgujTDHb2KnJ1B+b5bLIV9LaI2rfSNtK92q/qCoVrqI5qyOk0LSrc6KhwxGtYIeqeClFK6b3GDs2s432fS4PoXgm+bZdahxOQSXwv9XHp27gRI+K6QGyGVpLFX5WTUnIqHfYJJxA1DB5QOLVCDjRCcwnGUjLFUDP67wxkp03vFQ9m2v1FXdzBMM5jy4jWZDReKQPaGYW3IMZ+rGrrJlRZSec4NsbFM8F3EcGbzkzmtHt7EOiIAqA88ecSiis7xilIzCjg1DgxSGHmfbJ+Z2HOn0qmPukrAL68z/TUGlDUl6raXmpuDaOl+PyoRx5jt1TlNcvytHHNtb0ikfaGUpw+fYHe69rhAPhxqw9AjaowVlV/tgNgSBk+++q1RDN162KqBkExzTrKeADGW9ybdpuXIcdX+Vzboa1VmSzLmbSSLjkt7BY5HDn8u2lhpSAtf77oWzf2g2yYZrZlrNqG021iakHLC/fNJUZMLETvF6tYUY1cRpDPK/V0JTCkCl4RfF09+qtfSAAAp55H8yzHtfuffDb8XRkQjaJgvgavuQSURXMdCUtCFkP6sqT/UNQ2IyWl3d7f5DiTjRLoFJ5iMKUgideNGVjSiAFzcu/1SnTUvOcK7mYlkJ2LHneyfWLwl3xDOLSaUrT3SEhzZmckAgQdnhLvY3MiZd9oR2MxLGZgS2N33Awh/qdcvifQciY+QbodgTZPNHx5m88MqxHnEzOymj8wKG+3XekJ+mBZD1YyHc0nP2R1soJXMt+1jRPVRVELoMxjOOajueowZaUvRIU"
+  },
+  "npmrc": "@chika3742:registry=https://npm.pkg.github.com\n//npm.pkg.github.com/:_authToken=${NPM_TOKEN}",
   "branchPrefix": "deps-pages-nodeploy/",
   "packageRules": [
     {

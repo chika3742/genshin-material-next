@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/genshin-material-next.iml" filepath="$PROJECT_DIR$/.idea/genshin-material-next.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/genshin-material.iml" filepath="$PROJECT_DIR$/.idea/genshin-material.iml" />
     </modules>
   </component>
 </project>

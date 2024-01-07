@@ -17,6 +17,7 @@
     "@nuxt/test-utils": "^3.7.4",
     "@nuxtjs/eslint-config-typescript": "^12.1.0",
     "@types/eslint": "^8.44.3",
+    "@types/luxon": "^3.3.3",
     "@typescript-eslint/eslint-plugin": "^6.7.4",
     "@vue/test-utils": "^2.4.1",
     "bootstrap": "^5.3.2",
@@ -26,8 +27,7 @@
     "happy-dom": "^12.9.0",
     "playwright": "^1.38.1",
     "unplugin-auto-import": "^0.16.6",
-    "vitest": "^0.34.0",
-    "@types/luxon": "^3.3.3"
+    "vitest": "^0.34.0"
   },
   "dependencies": {
     "@chika3742/mhy-material-components": "^1.0.0",
@@ -46,5 +46,6 @@
     "vue-router": "^4.2.5",
     "workbox-build": "^7.0.0",
     "yaml": "^2.3.3"
-  }
+  },
+  "packageManager": "yarn@4.0.2"
 }

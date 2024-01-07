@@ -12,25 +12,16 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: actions/cache@v3
-        with:
-          path: ~/.bun/install/cache
-          key: ${{ runner.os }}-bun-${{ hashFiles('nuxt/bun.lockb') }}
-          restore-keys: |
-              ${{ runner.os }}-bun-
-
       - uses: actions/setup-node@v4
         with:
           node-version: 20
 
-      - uses: oven-sh/setup-bun@v1
-
-      - run: bun install
+      - run: yarn install
         working-directory: nuxt
         env:
           GH_PACKAGES_TOKEN: ${{ secrets.GH_PACKAGES_TOKEN }}
 
-      - run: bun run lint
+      - run: yarn run lint
         working-directory: nuxt
 
 #      - run: bun run test
