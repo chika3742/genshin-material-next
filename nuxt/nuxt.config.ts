@@ -97,6 +97,7 @@ export default defineNuxtConfig({
   },
 
   modules: [
+    "@nuxt/test-utils/module",
     "@chika3742/mhy-material-components",
     "@nuxtjs/i18n",
     "@nuxtjs/google-fonts",

@@ -1,20 +1,7 @@
-/// <reference types="vitest" />
+import {defineVitestConfig} from "@nuxt/test-utils/config"
 
-import {defineConfig} from "vite"
-import Vue from "@vitejs/plugin-vue"
-import AutoImport from "unplugin-auto-import/vite"
-
-export default defineConfig({
-  plugins: [Vue(), AutoImport({
-    imports: ["vue", "vue-router"],
-  })],
-  resolve: {
-    alias: {
-      "~": __dirname,
-    },
-  },
+export default defineVitestConfig({
   test: {
-    globals: true,
-    environment: "happy-dom",
+    environment: "nuxt",
   },
 })
