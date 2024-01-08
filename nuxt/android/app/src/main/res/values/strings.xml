@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">genshin-material</string>
+    <string name="title_activity_main">genshin-material</string>
+    <string name="package_name">net.chikach.genshinmaterial</string>
+    <string name="custom_url_scheme">net.chikach.genshinmaterial</string>
+</resources>

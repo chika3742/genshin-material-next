@@ -21,8 +21,8 @@ jobs:
         env:
           GH_PACKAGES_TOKEN: ${{ secrets.GH_PACKAGES_TOKEN }}
 
-      - run: yarn run lint
+      - run: npm run lint
         working-directory: nuxt
 
-      - run: yarn run test
+      - run: npm run test
         working-directory: nuxt
