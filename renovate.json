@@ -25,7 +25,8 @@
       "branchPrefix": "deps/",
       "labels": [
         "deps:nuxt"
-      ]
+      ],
+      "semanticCommitScope": "nuxt"
     },
     {
       "matchFileNames": [
@@ -36,15 +37,35 @@
       ],
       "labels": [
         "deps:nuxt"
-      ]
+      ],
+      "semanticCommitScope": "nuxt"
     },
     {
       "matchFileNames": [
-        ".github/workflows/test.yaml"
+        "nuxt/ios/**/*"
+      ],
+      "labels": [
+        "deps:ios"
+      ],
+      "semanticCommitScope": "ios"
+    },
+    {
+      "matchFileNames": [
+        "nuxt/android/**/*"
+      ],
+      "labels": [
+        "deps:android"
+      ],
+      "semanticCommitScope": "android"
+    },
+    {
+      "matchFileNames": [
+        ".github/workflows/*"
       ],
       "labels": [
         "deps:workflow"
-      ]
+      ],
+      "semanticCommitScope": "workflow"
     }
   ]
 }
