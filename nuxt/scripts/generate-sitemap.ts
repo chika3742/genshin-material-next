@@ -1,6 +1,7 @@
 import {Readable} from "stream"
 import fs from "fs/promises"
-import {SitemapItemLoose, EnumChangefreq, SitemapStream, streamToPromise} from "sitemap"
+import type {SitemapItemLoose} from "sitemap"
+import {EnumChangefreq, SitemapStream, streamToPromise} from "sitemap"
 
 export const generateSitemap = async(routes: string[], hostname: string) => {
   const links: SitemapItemLoose[] = routes.map(route => ({
